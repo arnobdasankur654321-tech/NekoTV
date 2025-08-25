@@ -67,7 +67,7 @@ const DetailPage = () => {
 
       <Helmet>
         <title>{titleId}</title>
-        <meta property="og:title" content="detail - NekoTV" />
+        <meta property="og:title" content="detail - Rynime" />
       </Helmet>
 
       {data && !isLoading ? (
