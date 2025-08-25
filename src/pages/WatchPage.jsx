@@ -107,9 +107,9 @@ const WatchPage = () => {
         <Helmet>
           <title>
             Watch {formattedAnimeName} Online, Free Anime Streaming Online on
-            NekoTV Anime Website
+            Rynime Anime Website
           </title>
-          <meta property="og:title" content="watch - NekoTV" />
+          <meta property="og:title" content="watch - Rynime" />
         </Helmet>
 
         <div className="flex flex-col gap-2">
@@ -175,7 +175,7 @@ const WatchPage = () => {
           </ul>
           <div className="w-full mt-6 p-4 rounded-lg" style={{ background: "#145183" }}>
             <DiscussionEmbed
-              shortname="nekotv"
+              shortname="Rynime"
               config={{
                 url: window.location.href,
                 identifier: `${id}-ep-${ep}`,
