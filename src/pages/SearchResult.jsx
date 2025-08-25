@@ -28,7 +28,7 @@ const SearchResult = () => {
     <div className="list-page pt-20">
       <Helmet>
         <title>Search Results for "{keyword}"</title>
-        <meta property="og:title" content={`Search - ${keyword} - NekoTV`} />
+        <meta property="og:title" content={`Search - ${keyword} - Rynime`} />
       </Helmet>
 
       <Heading>Search Results for "{keyword}"</Heading>
