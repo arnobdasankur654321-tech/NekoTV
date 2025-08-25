@@ -50,12 +50,12 @@ const Sidebar = () => {
         isSidebarOpen ? "translate-x-0" : "translate-x-[-100%]"
       }`}
     >
-      {/* Improved Close Menu Button */}
+      {/* Close Menu Button */}
       <button
         className="w-full flex items-center gap-2 px-4 py-3 mt-2 mb-4 rounded-lg bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(125,211,252,0.1)] hover:text-[#7dd3fc] text-base md:text-xl transition-all duration-200 transform hover:scale-105"
         onClick={sidebarHandler}
       >
-        <FaAngleLeft className="text-[#7dd3fc]" />
+        <FaAngleLeft className="text-[#7dd3fc] transition-colors duration-150 group-hover:text-[#b5051d]" />
         <span className="font-semibold">Close Menu</span>
       </button>
 
@@ -66,12 +66,12 @@ const Sidebar = () => {
             onClick={sidebarHandler}
             className="group cursor-pointer py-4 pl-4 text-base md:text-lg border-b border-[rgba(255,255,255,.05)] w-full flex items-center gap-2 transition-colors duration-150 hover:text-[#b5051d]"
           >
-            <span className="shrink-0 transition-colors duration-150 group-hover:text-[#b5051d]">
+            <span className="transition-colors duration-150 group-hover:text-[#b5051d]">
               {item.icon}
             </span>
             <Link
               to={item.link}
-              className="transition-colors duration-150 text-inherit group-hover:text-[#b5051d]"
+              className="transition-colors duration-150 group-hover:text-[#b5051d] inline-flex"
             >
               {item.name}
             </Link>
@@ -82,4 +82,11 @@ const Sidebar = () => {
         </li>
         <Genres
           event={sidebarHandler}
-          className="w-1/2 my-2 pl-2 hov
+          className="w-1/2 my-2 pl-2 hover:opacity-[.7]"
+        />
+      </ul>
+    </div>
+  );
+};
+
+export default Sidebar;
