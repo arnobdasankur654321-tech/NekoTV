@@ -3,7 +3,17 @@ import { Link, useLocation } from "react-router-dom";
 import Genres from "./Genres";
 
 import { useEffect } from "react";
-import { FaAngleLeft, FaHome, FaStar, FaFilm, FaClock, FaList, FaFire, FaArrowUp, FaHeart } from "react-icons/fa";
+import {
+  FaAngleLeft,
+  FaHome,
+  FaStar,
+  FaFilm,
+  FaClock,
+  FaList,
+  FaFire,
+  FaArrowUp,
+  FaHeart,
+} from "react-icons/fa";
 
 const Sidebar = () => {
   const isSidebarOpen = useSidebarStore((state) => state.isSidebarOpen);
@@ -36,7 +46,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`sidebar transition-all fixed overflow-scroll h-full z-[100] inset-0 w-64 md:w-80 bg-[rgba(59,62,129,0.95)] ${
+      className={`sidebar transition-all fixed overflow-scroll h-full z-[100] inset-0 w-64 md:w-80 bg-gradient-to-r from-[#3a3b3d] to-transparent ${
         isSidebarOpen ? "translate-x-0" : "translate-x-[-100%]"
       }`}
     >
